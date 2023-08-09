@@ -70,6 +70,12 @@
     },
     "lastname": {
       "type": "string"
+    },
+    "sermons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sermon.sermon",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
